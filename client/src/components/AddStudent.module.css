@@ -1,0 +1,50 @@
+.AddStudent {
+    margin: 100px auto;
+    width: 400px;
+}
+
+.AddStudent h1 {
+    color: #696969;
+}
+.Input {
+    display: inline-block;
+    width: 100%;
+    padding: 7px;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #696969;
+    border-radius: 5px;
+}
+.Input:focus {
+    outline: none;
+    border: 1px solid steelblue;
+}
+.Label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    color: #696969;
+    font-weight: 600;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.Button {
+    background-color: steelblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+}
